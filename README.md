@@ -1,3 +1,10 @@
+# Zhihao Ruan: Important Notes!!!!!
+**This implementation is written in Python 2 and is currently unavailable to run. I'm referencing the code as well as working on converting it into a Python 3 version of KCF implementation.**
+
+
+
+***Below are the original README...***
+
 # KCF tracker in Python
 
 Python implementation of
