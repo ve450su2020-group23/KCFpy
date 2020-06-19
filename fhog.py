@@ -148,8 +148,8 @@ def getFeatureMaps(image, k, mapp):
     assert(image.ndim == 3 and image.shape[2])
     numChannels = 3  # (1 if image.ndim==2 else image.shape[2])
 
-    sizeX = width / k
-    sizeY = height / k
+    sizeX = width // k
+    sizeY = height // k
     px = 3 * NUM_SECTOR
     p = px
     stringSize = sizeX * p
@@ -191,7 +191,7 @@ def getFeatureMaps(image, k, mapp):
     # ~0.001s
 
     nearest = np.ones((k), np.int)
-    nearest[0:k / 2] = -1
+    nearest[0:k // 2] = -1
 
     w = np.zeros((k, 2), np.float32)
     a_x = np.concatenate((k / 2 - np.arange(k / 2) - 0.5,

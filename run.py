@@ -84,7 +84,7 @@ if __name__ == '__main__':
             boundingbox = tracker.update(frame)
             t1 = time()
 
-            boundingbox = map(int, boundingbox)
+            boundingbox = list(map(int, boundingbox))
             cv2.rectangle(frame, (boundingbox[0], boundingbox[1]), (
                 boundingbox[0] + boundingbox[2], boundingbox[1] + boundingbox[3]), (0, 255, 255), 1)
 
